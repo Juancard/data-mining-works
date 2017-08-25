@@ -8,10 +8,10 @@ Data mining related projects I've been working on university
 
 - [Exercises](https://drive.google.com/open?id=0B13cNeaiufwVYmY2Q3ZtenNaYVU)
 - [Report](https://drive.google.com/open?id=1dIrguEKV3SaQq4FPp2bRdh-Nv9PavMAl7sY9L2SUhA0)
-- [Code](practice_work_00)
+- [Code](00)
 
 ### 01 - ETL Processes
 
 - [Exercises](https://drive.google.com/open?id=0B13cNeaiufwVR3dFcTdZeG8ySHc)
 - [Report](https://drive.google.com/open?id=1aqAShDYIcNRKWI95Wt7PmCzrJxxYP4TlejGynzlppAg)
-- [Código](practice_work_01)
+- [Código](01)
