@@ -47,8 +47,8 @@ Download the excel file and save it anywhere in your file system:
 - [Medios.xls](https://drive.google.com/open?id=0B13cNeaiufwVdFFXdzM3VnZyV0E)
 
 
-#### Final configuration
-1. Open `.ini` file and enter your db credentials and excel file:
+### Final configuration
+1. Open `.ini` file and enter your db credentials and excel file path:
 ```bash
 [config]
 db_user=my_db_user
