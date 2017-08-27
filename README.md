@@ -14,4 +14,4 @@ Data mining related projects I've been working on university
 
 - [Exercises](https://drive.google.com/open?id=0B13cNeaiufwVR3dFcTdZeG8ySHc)
 - [Report](https://drive.google.com/open?id=1aqAShDYIcNRKWI95Wt7PmCzrJxxYP4TlejGynzlppAg)
-- [Código](01)
+- [Code](01)
