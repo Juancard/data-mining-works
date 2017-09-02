@@ -57,10 +57,9 @@ Download the txt file and save it anywhere in your file system:
 
 
 #### Set Kettle variables
-1. Open `config.properties.example` file and fill the appropiate keys with the excel file path and the path to the exercise 04 job file:
+1. Open `config.properties.example` file and fill the appropiate key with the txt file path:
 ```bash
-txt_carreras=/your/path/to/Medios.xls
-ex04_job=[/your/path/to]/01-02-planes.txt
+txt_carreras=/your/path/to/01-02-planes.txt
 ```
 Make sure [/your/path/to] is the place where you downloaded the `.txt` file.
 
