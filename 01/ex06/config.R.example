@@ -1,0 +1,5 @@
+db_name <- "my_db_name"
+db_host <- "localhost"
+db_port <- 5432
+db_user <- "my_db_user"
+db_pass <- "my_db_pass"
