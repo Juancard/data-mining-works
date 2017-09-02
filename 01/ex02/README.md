@@ -8,7 +8,7 @@
   - [Prepare Kettle](#prepare-kettle)
   - [Database Configuration](#database-configuration)
   - [Txt file](#txt-file-download)
-  - [Set Kettle variables](#set-configuration-variables)
+  - [Set Kettle variables](#set-kettle-variables)
 - [Run](#run)
 
 ### Description

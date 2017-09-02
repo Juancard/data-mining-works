@@ -8,7 +8,7 @@
   - [Prepare Kettle](#prepare-kettle)
   - [Database Configuration](#database-configuration)
   - [Excel file](#excel-file-download)
-  - [Set Kettle variables](#set-configuration-variables)
+  - [Set Kettle variables](#set-kettle-variables)
   - [Set scheduller script](#set-scheduller-script)
 
 ### Description
