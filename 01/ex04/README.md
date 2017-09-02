@@ -30,6 +30,7 @@ This time though, the described ETL process will be handled by a Pentaho tool ca
 .[/path/to/]/data-integration/spoon.sh
 ```
 You can download it from the official page (link is up here, under 'Tools' section).
+
 2. Open job file (with `.kjb`) found in this repo
 
 #### Database configuration
@@ -38,6 +39,7 @@ You can download it from the official page (link is up here, under 'Tools' secti
 createdb my_db_name
 ```
  Make sure your user has the needed permissions to run this command.
+
 2. Then go to Kettle and enter your db credentials, that is, go to `View` tab, then double clik on `Database Connections`.
 
 #### Excel file download
@@ -50,6 +52,7 @@ Download the excel file and save it anywhere in your file system:
 ```bash
 medios_filepath=[/your/path/to]/Medios.xls
 ```
+
 2. Rename `config.properties.example` file to `config.properties`
 
 ### Run
