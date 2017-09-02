@@ -9,6 +9,7 @@ setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 # Configuration variables (db & stuff)
 source('config.R')
+db_table <- "rendimiento_estudiantes"
 
 # loads the PostgreSQL driver
 drv <- dbDriver("PostgreSQL")
@@ -18,7 +19,16 @@ con <- dbConnect(drv, dbname = db_name,
                  host = db_host, port = db_port,
                  user = db_user, password = db_pass)
 rm(db_pass) # removes the password
-rm(user)
+rm(db_user)
 # check for the table before loading
-dbExistsTable(con, "rendimiento_estudiantes")
-# TRUE
+tableExists <- dbExistsTable(con, db_table)
+if (!(tableExists)){
+  stop("Table "+ db_table + " does not exists in database")
+} else {
+  # query the data from postgreSQL 
+  rendimientos <- dbGetQuery(con, "SELECT * from " + db_table)
+  
+}
+
+# close the connection
+dbDisconnect(con)
