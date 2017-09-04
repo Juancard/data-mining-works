@@ -9,7 +9,7 @@
   - [Database Configuration](#database-configuration)
   - [Excel file](#excel-file-download)
   - [Set Kettle variables](#set-kettle-variables)
-  - [Set scheduller script](#set-scheduller-script)
+  - [Set scheduler script](#set-scheduler-script)
 
 ### Description
 This exercise extends the previous one by running the job in exercise 04 every day at 14:00 hs, but only if the Medios file is found on disk.
@@ -55,12 +55,12 @@ ex04_job=[/your/path/to]/data-mining-works/01/ex04/pw1_ex4.kjb
 
 2. Rename `config.properties.example` file to `config.properties`
 
-#### Set scheduller script
+#### Set scheduler script
 1. Open the `.sh` file under this repo directory and set the variable `SPOON_DIR` to the path where Pentaho data integration was downloaded. In my case, this is in my user home directory.
 
 2. Create a log file, this is where the errors will go when the OS run the `.sh` script.
 ```bash
-  touch scheduller.log
+  touch scheduler.log
 ```
 
 3. Run the following command in shell:
