@@ -1,0 +1,52 @@
+<Schema name="ventas" description="practice work 02 - exercise 06.3">
+  <Cube name="ventas" visible="true" description="practice work 02 - exercise 06.3" cache="true" enabled="true">
+    <Table name="ventas_h" schema="public" alias="">
+    </Table>
+    <Dimension type="StandardDimension" visible="true" foreignKey="id_fecha" name="fechas">
+      <Hierarchy name="all_fechas" visible="true" hasAll="true" allMemberName="all_fechas" primaryKey="id_fecha">
+        <Table name="fechas_d" schema="public" alias="">
+        </Table>
+        <Level name="ano" visible="true" column="ano" uniqueMembers="false">
+        </Level>
+        <Level name="mes" visible="true" column="mes" uniqueMembers="false">
+        </Level>
+        <Level name="dia" visible="true" column="dia" uniqueMembers="false">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="codigo_cliente" name="clientes">
+      <Hierarchy name="all_clientes" visible="true" hasAll="true" allMemberName="all_clientes">
+        <Table name="clientes_d" schema="public" alias="">
+        </Table>
+        <Level name="condicion" visible="true" column="condicion" uniqueMembers="false">
+        </Level>
+        <Level name="cuit" visible="true" column="cuit" uniqueMembers="false">
+        </Level>
+        <Level name="razon_social" visible="true" column="razon_social" uniqueMembers="false">
+        </Level>
+        <Level name="saldo_cuenta" visible="true" column="saldo_cuenta" uniqueMembers="false">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="codigo_producto" name="productos">
+      <Hierarchy name="all_productos" visible="true" hasAll="true" allMemberName="all_productos" primaryKey="codigo_producto">
+        <Table name="productos_d" schema="public" alias="">
+        </Table>
+        <Level name="categoria" visible="true" column="categoria" uniqueMembers="false">
+        </Level>
+        <Level name="descripcion" visible="true" column="descripcion" uniqueMembers="false">
+        </Level>
+        <Level name="especificaciones" visible="true" column="especificaciones" uniqueMembers="false">
+        </Level>
+        <Level name="marca" visible="true" column="marca" uniqueMembers="false">
+        </Level>
+        <Level name="precio_unitario" visible="true" column="precio_unitario" uniqueMembers="false">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Measure name="cant_vendida" column="cant_vendida" aggregator="count" visible="true">
+    </Measure>
+    <Measure name="total_monto" column="total_monto" aggregator="sum" visible="true">
+    </Measure>
+  </Cube>
+</Schema>
