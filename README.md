@@ -15,3 +15,9 @@ Data mining related projects I've been working on university
 - [Exercises](https://drive.google.com/open?id=0B13cNeaiufwVR3dFcTdZeG8ySHc)
 - [Report](https://drive.google.com/open?id=1aqAShDYIcNRKWI95Wt7PmCzrJxxYP4TlejGynzlppAg)
 - [Code](01)
+
+### 02 - Data warehouse: data modeling and architecture
+
+- [Exercises](https://drive.google.com/open?id=0B13cNeaiufwValU5bGdqYjlhOFU)
+- [Report](https://drive.google.com/open?id=1cC5XsNfetTGXX8P1AQVcJFBgRL_-oT3oCVcM_oA7iU4)
+- [Code](02)
