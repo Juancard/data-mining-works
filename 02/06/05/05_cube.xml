@@ -1,0 +1,32 @@
+<Schema name="Medios" description="pw 01 - ex 01">
+  <Cube name="medios" visible="true" cache="true" enabled="true">
+    <Table name="medios" schema="public">
+    </Table>
+    <Dimension type="StandardDimension" visible="true" foreignKey="id_tipo_medio" name="Tipos medio">
+      <Hierarchy name="all_tipos_medio" visible="true" hasAll="true" allMemberName="all_tipos_medio" primaryKey="id">
+        <Table name="tipos_medio" schema="public" alias="">
+        </Table>
+        <Level name="tipos_medio" visible="true" column="descripcion" uniqueMembers="false">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="id_especialidad" name="Especialidades">
+      <Hierarchy name="all_especialidades" visible="true" hasAll="true" allMemberName="all_especialidades" primaryKey="id">
+        <Table name="especialidades" schema="public">
+        </Table>
+        <Level name="level_especialidades" visible="true" column="descripcion" uniqueMembers="false">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="id_ciudad" name="Ciudades">
+      <Hierarchy name="all_ciudades" visible="true" hasAll="true" allMemberName="all_ciudades" primaryKey="id">
+        <Table name="ciudades" schema="public" alias="">
+        </Table>
+        <Level name="level_ciudades" visible="true" column="nombre" uniqueMembers="false">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Measure name="cant_medios" column="id" aggregator="count" visible="true">
+    </Measure>
+  </Cube>
+</Schema>
