@@ -1,0 +1,64 @@
+<Schema name="estudiantes" description="practice work: 06. 02">
+  <Cube name="estudiantes" visible="true" cache="true" enabled="true">
+    <Table name="estudiantes_h" schema="public" alias="">
+    </Table>
+    <Dimension type="StandardDimension" visible="true" foreignKey="id_sede" name="sedes">
+      <Hierarchy name="all_sedes" visible="true" hasAll="true" allMemberName="all_sedes" primaryKey="id_sede">
+        <Table name="sedes" schema="public" alias="">
+        </Table>
+        <Level name="nombre_sede" visible="true" column="nombre" uniqueMembers="false">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="id_sexo" name="sexos">
+      <Hierarchy name="all_sexos" visible="true" hasAll="true" allMemberName="all_sexos" primaryKey="id_sexo">
+        <Table name="sexos" schema="public" alias="">
+        </Table>
+        <Level name="sexo" visible="true" column="nombre" uniqueMembers="false">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="id_condicion" name="condiciones">
+      <Hierarchy name="all_condiciones" visible="true" hasAll="true" primaryKey="id_condicion">
+        <Table name="condiciones" schema="public" alias="">
+        </Table>
+        <Level name="condicion" visible="true" column="nombre" uniqueMembers="false">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="id_ano_ingreso" name="anos de ingreso">
+      <Hierarchy name="all_anos" visible="true" hasAll="true" allMemberName="all_anos" primaryKey="id_ano_ingreso">
+        <Table name="anos_ingreso" schema="public" alias="">
+        </Table>
+        <Level name="ano_ingreso" visible="true" column="ano_ingreso" uniqueMembers="false">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="id_plan" name="planes de estudio">
+      <Hierarchy name="all_planes" visible="true" hasAll="true" allMemberName="all_planes" primaryKey="id_plan">
+        <Table name="planes_estudio" schema="public" alias="">
+        </Table>
+        <Level name="resolucion" visible="true" column="resolucion" uniqueMembers="false">
+        </Level>
+        <Level name="activos" visible="true" column="activos" uniqueMembers="false">
+        </Level>
+        <Level name="fecha_alta" visible="true" column="fecha_alta" uniqueMembers="false">
+        </Level>
+        <Level name="id_carrera" visible="true" column="id_carrera" uniqueMembers="false">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="id_carrera" name="carreras">
+      <Hierarchy name="all_carreras" visible="true" hasAll="true" allMemberName="all_carreras" primaryKey="id_carrera">
+        <Table name="carreras" schema="public" alias="">
+        </Table>
+        <Level name="denominacion" visible="true" column="denominacion" uniqueMembers="false">
+        </Level>
+        <Level name="ano_creacion" visible="true" column="ano_creaciona" uniqueMembers="false">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Measure name="cantidad_estudiantes" column="cantidad_estudiantes" aggregator="count" visible="true">
+    </Measure>
+  </Cube>
+</Schema>
