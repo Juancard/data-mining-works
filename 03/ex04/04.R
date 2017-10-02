@@ -7,4 +7,6 @@ tt <- univ[,5]
 tt.mean <- mean(tt, na.rm = TRUE)
 tt[is.na(tt)] <- tt.mean
 # b) hot deck
-hot.deck(data, m = 5, method = c("best.cell", "p.draw"))
+# install.packages("hot.deck")
+univ.no_nulls <- hot.deck(univ)
+tt.hotdeck <- as.data.frame(univ.no_nulls$data)[,5]
