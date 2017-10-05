@@ -10,6 +10,10 @@ ruidoso <- read.csv(DATASET_LOCATION)
 View(ruidoso)
 
 # a) data distribution
+par(mfrow=c(2,2))
+for(i in 2:5){
+  barplot(ruidoso[,i], main = names(ruidoso)[i])
+}
 boxplot(ruidoso[,c(-1)])
 
 #equal WIDTH!!
