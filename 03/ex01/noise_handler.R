@@ -10,12 +10,16 @@ boxplot(ruidoso[,c(-1)])
 equal_width_binning <- function(the_vector, given_breaks) {
   factors <- cut(the_vector, breaks=given_breaks, dig.lab=7)
   mean_per_bin <- tapply(the_vector, factors, mean)
-  mean_per_bin
+  for (i in 1:length(the_vector)){
+    the_vector[i] <- mean_per_bin[factors[i]]
+  }
+  the_vector
 }
 #equal freq.
 equal_freq_binning <- function(x, binSize) {
   desiredFrequency = floor(length(x)/binSize)
   bins <- split(sort(x), rep(1:binSize, rep(desiredFrequency, binSize)))
+  print(bins)
   bins
 }
 equal_freq_smoothing <- function(x, binSize){
