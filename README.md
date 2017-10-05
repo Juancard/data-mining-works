@@ -21,3 +21,9 @@ Data mining related projects I've been working on university
 - [Exercises](https://drive.google.com/open?id=0B13cNeaiufwValU5bGdqYjlhOFU)
 - [Report](https://drive.google.com/open?id=1cC5XsNfetTGXX8P1AQVcJFBgRL_-oT3oCVcM_oA7iU4)
 - [Code](02)
+
+### 03 - Data Mining: variables analysis and transformation 
+
+- [Exercises](https://drive.google.com/open?id=0B13cNeaiufwVRm5felhRaks5QnM)
+- [Report](https://drive.google.com/open?id=1wXmuuCYnQjOs-JFKApjOPja-mFyNemWOcosxtFjOHNc)
+- [Code](03)
