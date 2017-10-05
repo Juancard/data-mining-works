@@ -8,13 +8,13 @@ tt.no_null <- tt[!is.na(tt)]
 # remove outliers
 tt.no_outliers = tt.no_null[tt.no_null<300]
 # distribution of original data
-hist(tt.no_outliers, main = "Original")
+hist(tt.no_outliers, main = "Original", breaks = 30)
 # a) minmax normalization
 tt.minmax <- (tt.no_outliers-min(tt.no_outliers))/(max(tt.no_outliers)-min(tt.no_outliers))
-hist(tt.minmax, main = " Minmax")
+hist(tt.minmax, main = " Minmax", breaks = 30)
 # b) z-score normalization
 tt.zscore <- (tt.no_outliers - mean(tt.no_outliers)) / sd(tt.no_outliers)
-hist(tt.zscore, main = "Z-score")
+hist(tt.zscore, main = "Z-score", breaks = 30)
 # c) decimal scale normalization
 tt.decimal_scale <- tt.no_outliers / 10000
-hist(tt.decimal_scale, main = "Decimal Scale")
+hist(tt.decimal_scale, main = "Decimal Scale", breaks = 30)
