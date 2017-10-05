@@ -2,7 +2,8 @@
 ruidoso <- read.csv("/home/juan/Documentos/unlu/bdm/tps/TP03/ds/ruidoso.txt") 
 # print data frame
 View(ruidoso)
-pairs(ruidoso[,c(-1)])
+
+# a) data distribution
 boxplot(ruidoso[,c(-1)])
 
 #equal WIDTH!!
