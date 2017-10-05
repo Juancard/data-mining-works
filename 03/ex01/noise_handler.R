@@ -19,15 +19,23 @@ equal_width_binning <- function(the_vector, given_breaks) {
 equal_freq_binning <- function(x, binSize) {
   desiredFrequency = floor(length(x)/binSize)
   bins <- split(sort(x), rep(1:binSize, rep(desiredFrequency, binSize)))
-  print(bins)
   bins
 }
 equal_freq_smoothing <- function(x, binSize){
   bins <- equal_freq_binning(x, binSize)
   mean_per_bin <- sapply(bins, mean)
-  desiredFrequency = floor(length(x)/binSize)
-  rep(mean_per_bin, each=desiredFrequency)
+  for (i in 1:length(x)){
+    for (binNumber in 1:length(bins)){
+      if (x[i] %in% unlist(bins[binNumber])){
+        thisElementBin <- binNumber 
+        break
+      }
+    }
+    x[i] <- mean_per_bin[thisElementBin]
+  }
+  x
 }
+
 # Exercise a.
 sapply(ruidoso[,2:5], equal_freq_smoothing, binSize=6)
 
