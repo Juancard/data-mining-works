@@ -1,5 +1,11 @@
+#PARAMETERS:
+# path to ruidoso.txt
+DATASET_LOCATION = "/home/juan/Documentos/unlu/bdm/tps/TP03/ds/ruidoso.txt"
+# path where the resulting .png files for each smoothing method will be saved
+OUTPUT_FILES_LOCATION = "/home/juan/Documentos/unlu/bdm/data-mining-works/03/ex01/output/"
+
 # read text file 
-ruidoso <- read.csv("/home/juan/Documentos/unlu/bdm/tps/TP03/ds/ruidoso.txt") 
+ruidoso <- read.csv(DATASET_LOCATION) 
 # print data frame
 View(ruidoso)
 
@@ -36,12 +42,30 @@ equal_freq_smoothing <- function(x, binSize){
   x
 }
 
+comparativeGraph <- function(ruidosoSmooth, method = "not specified", filename="smooth.png"){
+  par(mfrow=c(4, 2))
+  dev.copy(png,paste(OUTPUT_FILES_LOCATION, filename, sep=""), width=720,height=1024)
+  for(i in 2:5){
+    colName <- names(ruidoso)[i]
+    yLim <- max(c(max(ruidoso[,i], na.rm = TRUE), max(ruidosoSmooth[,i-1], na.rm = TRUE)))
+    plot(ruidoso[,i], main = paste(colName, " - Original"), ylim = c(0, yLim))
+    plot(ruidosoSmooth[,i-1], main = paste(colName, " - ", method), ylim = c(0, yLim))
+  }
+  print(paste("File saved in: ", OUTPUT_FILES_LOCATION, filename, sep=""))
+  dev.off()
+}
+
 # Exercise a.
-sapply(ruidoso[,2:5], equal_freq_smoothing, binSize=6)
+numberOfBins <- 11
+ruidoso.smooth.eqfreq = sapply(ruidoso[,2:5], equal_freq_smoothing, binSize=numberOfBins)
+filename <- paste("equal_freq_smoothing_", numberOfBins, "bins.png", sep="")
+comparativeGraph(ruidoso.smooth.eqfreq, filename = filename, method = "Equal freq. smoothing")
 
 # Exercise b.
 for (i in 2:10) {
   print(paste("BIN = ", i))
-  print(sapply(ruidoso[,2:5], equal_width_binning, given_breaks=i))
+  filename <- paste("equal_width_smoothing_", i, "bins.png", sep="")
+  ruidoso.smooth.eqwidth <- sapply(ruidoso[,2:5], equal_width_binning, given_breaks=i)
+  comparativeGraph(ruidoso.smooth.eqwidth, filename = filename, method = "Equal freq. smoothing")
   print("***********************************************************************")
 }
