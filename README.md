@@ -27,3 +27,9 @@ Data mining related projects I've been working on university
 - [Exercises](https://drive.google.com/open?id=0B13cNeaiufwVRm5felhRaks5QnM)
 - [Report](https://drive.google.com/open?id=1wXmuuCYnQjOs-JFKApjOPja-mFyNemWOcosxtFjOHNc)
 - [Code](03)
+
+### 0301 - Data Mining: decision trees (J48) 
+
+- [Exercises](https://drive.google.com/open?id=0B13cNeaiufwVbVZ1amNBcWJmYUk)
+- [Report](https://drive.google.com/open?id=1Htepb2N8zZQd2_VL-9xmJpmaov6KCinE0krxPwOdJs0)
+- [Code](0301)
