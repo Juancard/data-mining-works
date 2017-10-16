@@ -1,0 +1,21 @@
+@relation asado
+@attribute pronostico {soleado, nublado, lluvioso}
+@attribute temperatura {calor, templado, frío}
+@attribute humedad {normal, alta}
+@attribute viento {leve, fuerte}
+@attribute asado {si, no}
+@data
+soleado,calor,alta,leve,no
+soleado,calor,alta,fuerte,no
+nublado,calor,alta,leve,si
+lluvioso,templado,alta,leve,si
+lluvioso,frío,normal,leve,si
+lluvioso,frío,normal,fuerte,no
+nublado,frío,normal,fuerte,si
+soleado,templado,alta,leve,no
+soleado,frío,normal,leve,si
+lluvioso,templado,normal,leve,si
+soleado,templado,normal,fuerte,si
+nublado,templado,alta,fuerte,si
+nublado,calor,normal,leve,si
+lluvioso,templado,alta,fuerte,no
