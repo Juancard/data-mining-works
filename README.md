@@ -33,3 +33,9 @@ Data mining related projects I've been working on university
 - [Exercises](https://drive.google.com/open?id=0B13cNeaiufwVbVZ1amNBcWJmYUk)
 - [Report](https://drive.google.com/open?id=1Htepb2N8zZQd2_VL-9xmJpmaov6KCinE0krxPwOdJs0)
 - [Code](0301)
+
+### 0302 - Data Mining: clustering 
+
+- [Exercises](https://drive.google.com/open?id=0B13cNeaiufwVaVFDemVmUmYxZ0k)
+- [Report](https://drive.google.com/open?id=1gTT4Z20RpV4Z0vhd6s4zgNvktIwhEHj-1ZQvisA0tNE)
+- [Code](0302)
