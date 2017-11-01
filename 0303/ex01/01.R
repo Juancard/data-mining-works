@@ -15,6 +15,11 @@ plot(fit$residuals, main = "Homocedasticidad") # No debería observarse ningún 
 ## Normalidad de los residuos
 qqnorm(fit$residuals, main = "Supuesto de normalidad") # Lo verificamos gráficamente
 qqline(fit$residuals)
+# d)
+llamadas.min.mean <- mean(llamadas$minutos)
+llamadas.uni.mean <- mean(llamadas$unidades)
+beta1 <- (sum((llamadas$minutos - llamadas.min.mean) * (llamadas$unidades - llamadas.uni.mean))) / sum((llamadas$minutos - llamadas.min.mean) ^ 2) 
+beta0 <- llamadas.uni.mean - (beta1 * llamadas.min.mean)
 # e)
 plot(llamadas$unidades ~ llamadas$minutos, data=llamadas, main="Recta de ajuste")
 abline (fit, col="red")
