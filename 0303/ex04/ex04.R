@@ -1,0 +1,5 @@
+library(MASS)
+View(Boston)
+boston.scaled = scale(Boston)
+plot(boston.scaled)
+help("scale")
