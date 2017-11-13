@@ -9,7 +9,7 @@ reglas <- apriori (groc, list("confidence"=0.1, "support"=0.006))
 
 #c.
 inspect(head(sort(reglas, by="lift"),10))
-lala<-data.frame(
+df_reglas<-data.frame(
   lhs = labels(lhs(reglas)),
   rhs = labels(rhs(reglas)), 
   reglas@quality)
