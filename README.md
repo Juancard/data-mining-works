@@ -39,3 +39,15 @@ Data mining related projects I've been working on university
 - [Exercises](https://drive.google.com/open?id=0B13cNeaiufwVaVFDemVmUmYxZ0k)
 - [Report](https://drive.google.com/open?id=1gTT4Z20RpV4Z0vhd6s4zgNvktIwhEHj-1ZQvisA0tNE)
 - [Code](0302)
+
+### 0303 - Data Mining: linear regression 
+
+- [Exercises](https://drive.google.com/open?id=0B13cNeaiufwVTDFHdDVTYnFnYTA)
+- [Report](https://drive.google.com/open?id=1lOGftvGwR3WXxUTncy3siIg17-dJxOt6w1taZrPerPM)
+- [Code](0303)
+
+### 0304 - Data Mining: association rules
+
+- [Exercises](https://drive.google.com/open?id=1yhga671Nv4OZTRIfpWpHEhZY8tIv1QlO)
+- [Report](https://drive.google.com/open?id=1Ob9QAOEAOQ852jSz-8A23Xd7wJtFdnR2K59GJoKQYpU)
+- [Code](0304)
