@@ -1,4 +1,4 @@
-sup=read.csv("~/Documentos/unlu/bdm/tps/TP06/ds/supervisor-data-performance.csv")
+sup=read.csv("supervisor-data-performance.csv")
 #a.
 View(sup)
 str(sup)

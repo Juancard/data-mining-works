@@ -1,4 +1,4 @@
-llamadas=read.csv("~/Documentos/unlu/bdm/tps/TP06/ds/llamadas.csv")
+llamadas=read.csv("llamadas.csv")
 fit = lm (unidades ~ minutos, data = llamadas)
 # a.
 plot(llamadas[-c(1)]) # Gráficamente

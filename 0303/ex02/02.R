@@ -1,4 +1,4 @@
-ani=read.csv("~/Documentos/unlu/bdm/tps/TP06/ds/animals.csv")
+ani=read.csv("animals.csv")
 ani.log = log(ani)
 # a.
 plot(ani.log[-c(1)]) # Gráficamente
