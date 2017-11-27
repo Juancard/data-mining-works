@@ -1,5 +1,8 @@
 library(MASS)
+library(RWeka)
 View(Boston)
 boston.scaled = scale(Boston)
 plot(boston.scaled)
 help("scale")
+data("Boston")
+write.arff(boston.scaled, file = "boston.arff", eol = "\n")

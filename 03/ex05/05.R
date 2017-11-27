@@ -19,7 +19,7 @@ eur.porc_var
 # c) gráfico de dispersion
 plot(eur.autoval, xlab = "componentes", ylab = "varianza")
 # d) gráfico biplot
-biplot(pca1)
+biplot(pca1,choices = 1:2)
 # generate strings to save in csv file
 write.table(eur.cov, sep=";", dec = ",")
 write.table(eur.autovect, sep=";", dec = ",")
