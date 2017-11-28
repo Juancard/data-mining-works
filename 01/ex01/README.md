@@ -48,7 +48,8 @@ Download the excel file and save it anywhere in your file system:
 
 
 ### Final configuration
-1. Open `.ini` file and enter your db credentials and excel file path:
+1. Rename `medios_migration.example.ini` to `medios_migration.ini`.
+2. Open `medios_migration.ini` file and enter your db credentials and excel file path:
 ```bash
 [config]
 db_user=my_db_user
