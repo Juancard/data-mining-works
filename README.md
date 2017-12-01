@@ -59,4 +59,5 @@ Data mining related projects I've been working on university
 - [Code](0305)
 
 ### 04 - Business Intelligence
+- [Report](https://drive.google.com/open?id=1z4YRDvwIrHEw3RZeznxx0p4rNAL1q2-l)
 - [Code](04)
