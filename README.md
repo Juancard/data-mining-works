@@ -51,3 +51,12 @@ Data mining related projects I've been working on university
 - [Exercises](https://drive.google.com/open?id=1yhga671Nv4OZTRIfpWpHEhZY8tIv1QlO)
 - [Report](https://drive.google.com/open?id=1Ob9QAOEAOQ852jSz-8A23Xd7wJtFdnR2K59GJoKQYpU)
 - [Code](0304)
+
+### 0305 - Data Mining: Naive Bayes
+
+- [Exercises](https://drive.google.com/open?id=1yhga671Nv4OZTRIfpWpHEhZY8tIv1QlO)
+- [Report](https://docs.google.com/document/d/1ZXu9yyumAOP77pnUneeHp98dC9ASHv5lKZJFjBJ7Yao/edit?usp=sharing)
+- [Code](0305)
+
+### 04 - Business Intelligence
+- [Code](04)
